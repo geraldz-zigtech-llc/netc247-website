@@ -1,5 +1,5 @@
-/* ============================================
-   networks | etc — Design System
+﻿/* ============================================
+   networks | etc — Design System (v2)
    ============================================ */
 
 :root {
@@ -16,7 +16,7 @@
   --green: #1BA672;
 
   /* Type */
-  --font-display: "Space Grotesk", "Arial Narrow", Arial, sans-serif;
+  --font-display: "Roboto", "Arial Narrow", Arial, sans-serif;
   --font-body: "Inter", -apple-system, "Segoe UI", Arial, sans-serif;
   --font-mono: "IBM Plex Mono", "Courier New", monospace;
 
@@ -48,7 +48,6 @@ img { max-width: 100%; display: block; }
 a { color: var(--red); text-decoration: none; }
 a:hover { text-decoration: underline; }
 
-/* Visible focus ring everywhere — never remove without replacing */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -104,7 +103,6 @@ p { margin: 0 0 var(--space-2); }
   margin: 0;
 }
 
-/* ---------- Skip link ---------- */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -117,7 +115,6 @@ p { margin: 0 0 var(--space-2); }
 }
 .skip-link:focus { left: 0; }
 
-/* ---------- Header ---------- */
 .site-header {
   background: var(--white);
   border-bottom: 1px solid var(--hairline);
@@ -135,12 +132,12 @@ p { margin: 0 0 var(--space-2); }
 .logo {
   font-family: var(--font-display);
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
   text-decoration: none;
   display: flex;
   align-items: baseline;
-  gap: 0.5em;
+  gap: 0.2em;
 }
 .logo:hover { text-decoration: none; }
 .logo .pipe { color: var(--red); font-weight: 400; }
@@ -251,7 +248,7 @@ p { margin: 0 0 var(--space-2); }
   gap: var(--space-5);
   align-items: center;
 }
-.hero h1 { color: var(--white); }
+.hero h1 { color: var(--white); font-size: clamp(1.9rem, 3.4vw, 2.75rem); }
 .hero-sub {
   font-size: 1.15rem;
   color: #C9C9CC;
@@ -260,7 +257,6 @@ p { margin: 0 0 var(--space-2); }
 }
 .hero-ctas { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-4); }
 
-/* NOC status strip — signature element */
 .status-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -325,10 +321,10 @@ section { padding: var(--space-6) 0; }
   margin-bottom: var(--space-4);
 }
 
-/* Pillars grid (Managed IT / Network / Cloud / Security) */
+/* Pillars grid — 3 columns (IT Services / Physical Security / Infrastructure & Low Voltage) */
 .pillars {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--space-3);
 }
 .pillar-card {
@@ -344,10 +340,12 @@ section { padding: var(--space-6) 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--space-2);
+  margin-bottom: 0;
+  flex-shrink: 0;
 }
 .pillar-icon svg { width: 22px; height: 22px; stroke: var(--white); }
-.pillar-card h3 { margin-bottom: 0.4em; font-size: 1.05rem; }
+.pillar-head { display: flex; align-items: center; gap: var(--space-2); margin-bottom: var(--space-2); }
+.pillar-card h3 { margin-bottom: 0; font-size: 1.05rem; }
 .pillar-card ul {
   margin: 0.6em 0 0;
   padding-left: 1.1em;
@@ -444,7 +442,7 @@ section { padding: var(--space-6) 0; }
 .footer-logo {
   font-family: var(--font-display);
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--white);
 }
 .footer-logo .pipe { color: var(--red); font-weight: 400; }
@@ -475,10 +473,18 @@ section { padding: var(--space-6) 0; }
 @media (max-width: 900px) {
   .hero .container { grid-template-columns: 1fr; }
   .hero-visual { display: none; }
-  .pillars { grid-template-columns: repeat(2, 1fr); }
+  .pillars { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: var(--space-5);
+  align-items: center;
+}
 @media (max-width: 640px) {
+  .about-intro-grid { grid-template-columns: 1fr; }
+  .about-intro-grid img { max-width: 160px; margin: 0 auto; }
   .main-nav { display: none; }
   .nav-toggle { display: inline-flex; flex-direction: column; justify-content: center; }
   .header-phone { display: none; }
