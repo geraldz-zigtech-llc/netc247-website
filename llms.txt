@@ -1,0 +1,30 @@
+# networks | etc
+
+> networks | etc is a managed IT, physical security, and low voltage infrastructure company serving small businesses in Central Florida. It is a licensed electrical contractor based in Altamonte Springs, Florida.
+
+## Services
+
+- Managed IT: remote and onsite support, 24/7 monitoring and notification, backups and business continuity, Google Workspace and Microsoft 365, network design and installation, cyber security.
+- Physical security: security surveillance, access control, analog to IP camera migration, standard, hybrid, and cloud systems.
+- Infrastructure and low voltage: low voltage cabling, data, voice, and video, wired and wireless infrastructure, tone, test, and verify, new construction and remodels.
+
+## Who we serve
+
+Small businesses in Central Florida, including the Orlando area, that need dependable IT, security, and cabling from one provider.
+
+## Company facts
+
+- Business name: networks | etc
+- Location: 540 North State Road 434, Unit 123, Altamonte Springs, FL 32714
+- Phone: 407-476-1310
+- Website: https://netc247.com
+- Certified Electrical Contractor License: EC13016153
+- Experience: more than 20 years serving Central Florida businesses
+
+## Key pages
+
+- [Home](https://netc247.com/): Overview of managed IT, security, and infrastructure services.
+- [About Us](https://netc247.com/about.html): Company background and experience.
+- [Services](https://netc247.com/services.html): Full list of IT, physical security, and low voltage services.
+- [Support](https://netc247.com/support.html): How existing customers get help, including remote support.
+- [Contact Us](https://netc247.com/contact.html): Phone, address, and contact form.

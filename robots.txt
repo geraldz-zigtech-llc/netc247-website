@@ -1,0 +1,43 @@
+# robots.txt for networks | etc (netc247.com)
+# Note: each named crawler group below repeats the Disallow rule, because a
+# crawler that matches a named group ignores the "User-agent: *" group.
+# GPTBot and Google-Extended control AI model training use specifically.
+# ChatGPT-User is an on-demand crawler triggered by a live user prompt.
+
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: GPTBot
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /thank-you.html
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /thank-you.html
+
+Sitemap: https://netc247.com/sitemap.xml
